@@ -1,0 +1,24 @@
+State Machine Danger
+
+event FoundAid
+event PlayerIsNear
+event HealthpointAreLow
+event PlayerIsOutOfSight
+event PlayerIsIdle
+event PlayerIsAttakingBack
+
+
+state attack
+	PlayerIsAttakingBack => evade
+	PlayerIsOutOfSight => wander
+
+state wander
+	PlayerIsNear => attack
+
+state find_aid
+	FoundAid => wander
+
+state evade
+	HealthpointAreLow =>find_aid
+	PlayerIsIdle => attack
+

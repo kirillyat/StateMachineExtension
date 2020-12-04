@@ -1,0 +1,17 @@
+StateMachine:
+	'statemachine' name=ID
+	(states+=State | events+=Event)*
+;
+
+Event:
+	'event' name=ID
+;
+
+State:
+	'state' name=ID
+	(transitions+=Transition)*
+;
+
+Transition:
+	event=[Event] '=>' state=[State]
+;

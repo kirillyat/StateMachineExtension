@@ -1,0 +1,11 @@
+dsl StateMachine [sm] {
+	
+	general {
+		publisher: "kirillyat"
+		version: "0.0.1"
+	}
+
+	paths {
+		grammar: "tx_StateMachine/StateMachine.tx"
+	}
+}

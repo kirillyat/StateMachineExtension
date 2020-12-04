@@ -1,0 +1,23 @@
+statemachine Danger
+
+event found_aid
+event player_is_near
+event healthpoint_are_low
+event player_is_out_of_sight
+event player_is_idle
+event player_is_attaking_back
+
+
+state attack
+	player_is_attaking_back => evade
+	player_is_out_of_sight => wander
+
+state wander
+	player_is_near => attack
+
+state find_aid
+	found_aid => wander
+
+state evade
+	healthpoint_are_low =>find_aid
+	player_is_idle => attack
