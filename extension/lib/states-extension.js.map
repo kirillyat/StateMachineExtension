@@ -1,1 +1,0 @@
-{"version":3,"file":"states-extension.js","sourceRoot":"","sources":["../src/states-extension.ts"],"names":[],"mappings":";;AAAA,+BAAiC;AAEjC,SAAgB,QAAQ,CAAC,OAAgC;IACrD,MAAM,CAAC,MAAM,CAAC,sBAAsB,CAAC,6BAA6B,CAAC,CAAC;AACxE,CAAC;AAFD,4BAEC;AAED,SAAgB,UAAU;IACtB,OAAO,OAAO,CAAC,OAAO,CAAC,SAAS,CAAC,CAAC;AACtC,CAAC;AAFD,gCAEC"}
